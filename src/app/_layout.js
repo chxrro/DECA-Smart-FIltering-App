@@ -1,5 +1,9 @@
 import { Stack } from 'expo-router'
+import { Image } from 'react-native';
 
+import icons from '../constants/icons'
+
+ 
 const Layout = () => {
     return (
     <Stack>
@@ -7,8 +11,13 @@ const Layout = () => {
             options={{
                 headerShadowVisible: false,
                 headerTitle: '',
-                headerStyle: { backgroundColor: 'black' },
-                
+                headerStyle: { backgroundColor: 'white' },
+                headerLeft: () => (
+                    <Image source={icons.menu} style={{width: 25, height: 25, marginLeft: 5}} resizeMode="cover" />
+                ),
+                headerRight: () => (
+                    <Image source={icons.profile} style={{width: 25, height: 25, marginRight: 5}} resizeMode='cover'/>
+                )
             }}
         />
     </Stack> 

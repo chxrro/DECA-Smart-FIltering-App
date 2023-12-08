@@ -1,12 +1,12 @@
 import { View, Text } from 'react-native'
 import React from 'react'
 
-const Health = () => {
+const Energy = () => {
   return (
     <View>
-      <Text>Health</Text>
+      <Text>Energy</Text>
     </View>
   )
 }
 
-export default Health
+export default Energy
